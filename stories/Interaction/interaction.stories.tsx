@@ -7,6 +7,7 @@ import AddItem from './component/addItem';
 import Tooltip from './component/tooltip';
 import DragCanvas from './component/drag-canvas';
 import ZoomCanvasFix from './component/zoom-canvas-fix'
+import FishEye from './component/fisheye-lens';
 
 export default { title: 'Interaction' };
 
@@ -26,4 +27,6 @@ storiesOf('Interaction', module)
     <DragCanvas />
   )).add('zoom canvas fix items', () => (
     <ZoomCanvasFix />
+  )).add('fisheye', () => (
+    <FishEye />
   ));
